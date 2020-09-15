@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+  
+    <title>Bai tap Layout</title>
+</head>
+<style>
+    body {
+        margin: 0px;
+    }
+    .main{
+        margin:0px; 
+        padding: 0px;
+        border:0px;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 1280px;
+        
+    }
+      .column{
+    display: grid;
+    grid-template-columns: 3fr 60fr;
+    grid-template-rows: 1fr;
+    justify-content: space-between;
+    
+
+}
+.cols1{
+    grid-column-start: 1;
+    background: rgba(197, 194, 194, 0.842); 
+    height:1000px;
+    margin:0; 
+    height: 1080px;
+  width: 60px;
+}
+.icon{ 
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap:40px;
+    align-items: center;
+    margin-right: 1rem;
+    margin: 1rem;   
+}   
+.icon1 {
+    padding: 0;
+    color:grey;
+    
+}
+.cols2{
+    display: grid;
+    grid-template-rows: 1fr 7fr;
+    grid-column-start: 2;
+    background: white;
+}
+.rows1{
+    border-color: white; 
+    background:white;
+    border-bottom: rgba(197, 194, 194, 0.842);
+    border-width: 1px;
+   border-style: solid;
+   border-radius: 5px; 
+   height: 115px;
+  width: 1220px;
+}
+.top-nav{
+    margin: 1rem;
+    font-weight:bold;
+    font-size:x-large;
+}
+.bot-nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    font-weight:bold;
+    font-style: normal;
+       
+}
+.rows2{
+    margin:1rem;
+    display: grid;
+    grid-template-rows: 50px 100px;
+    grid-gap:30px;
+}
+.rows2-1{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:5px;
+}
+.rows2-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap:30px;      
+}
+
+.govement{
+    display:grid;
+    grid-template-rows:1fr 1fr 2fr 1fr 3fr  ;
+    border-width: 1px;
+   border-style: solid;
+   border-color: rgb(201, 200, 200);
+    background: white;
+    box-sizing: border-box;
+    width: 400px;
+    height: 300px;
+    border-radius: 5px;      
+}
+.govement1{
+    margin-right:10px;
+    
+}
+.govement1>i{
+    margin-right:1rem;
+   
+}
+.img1{
+    display:flex;
+flex-wrap:nowrap;
+grid-row-start: 3;
+
+}
+.img2{
+   
+grid-row-start: 5;
+
+margin-left: 37px;
+
+}
+.govement2{
+    display:grid;
+    grid-row-start: 2;
+
+}
+
+.icon2{
+    float:right;
+    
+}
+.training{
+    display:grid;
+    grid-template-rows:1fr 1fr 2fr 1fr 2fr ;
+    border-width: 1px;
+   border-style: solid;
+   border-color: rgb(201, 200, 200);
+    background: white;
+    box-sizing: border-box;
+    width: 400px;
+    height: 300px;
+    border-radius: 5px;  
+}
+.training1{
+    margin-right:10px;   
+}
+.img3{ display:flex;
+flex-wrap:nowrap;
+grid-row-start: 3;
+margin-left: 37px;}
+.training3{
+    grid-row-start: 4   ;
+}
+.img4{
+    grid-row-start: 5;
+    margin-left: 37px;   ;
+}
+.number{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;height: 50px;width: 50px;
+    background:#DEDEDE;
+    text-align: center;
+
+    padding: 2px;   
+    color: grey;}
+.button{
+    height: 36px;
+    width: 180px;
+}
+</style>
+<body>
+    <div class="main">
+        <div class="column">
+            <div class="cols1">
+                <ul class="icon icon1">
+                    <i class='fas fa-plus-circle' style='font-size:24px;color:rgb(100, 149, 237)'></i>   
+                    <i class='fas fa-home' style='font-size:24px'></i>
+                    <i class='fas fa-bullhorn' style='font-size:24px'></i>
+                    <i class='fas fa-book' style='font-size:24px'></i>
+                    <i class='fas fa-project-diagram' style='font-size:24px'></i>
+                   
+                </ul>
+            </div>
+            <div class="cols2">
+                <div class="rows1">
+                    <div class="top-nav">
+                        User Manager
+                    </div>
+                    <div style="color:grey" class="bot-nav">
+                        <div class="User">
+                            <ul>
+                                <i class='fas fa-user-alt' style="font-size:20px;color: rgba(0,0,0,0.38);;"></i>
+                                <i style="font-style: normal;color: rgba(0,0,0,0.38);">User</i>
+                                <i style="font-style: normal; border:solid;border-radius: 5px;border-width: 2px;color: rgba(0,0,0,0.38);">678</i>
+                            </ul>
+            
+                        </div>
+                        <div class="Manager">
+                            <ul>
+                                <i class='far fa-address-book' style="font-size:20px;color: rgba(0,0,0,0.38);"></i>
+                                <i style="font-style: normal;color: rgba(0,0,0,0.38);">Manager</i>
+                                <i style="font-style: normal;border:solid;border-radius: 5px;border-width: 2px;color: rgba(0,0,0,0.38);">6</i>
+                            </ul>
+                        </div>
+                        <div class="Team">
+                            <ul>
+                                <i class='fas fa-user-friends' style="font-size:20px;color: rgba(0,0,0,0.38);"></i>
+                                <i style="font-style: normal;color: rgba(0,0,0,0.38);">Teams</i>
+                                <i style="font-style: normal;border:solid;border-radius: 5px;border-width: 2px;color: rgba(0,0,0,0.38);">2</i>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="rows2">
+                    <div class="rows2-1">
+                        <ul class="rows2-1">
+                            <i class="button">
+                                <button type="button" style="background:rgb(100, 149, 237);color:white;border-style: none;height: 36px;
+                                width: 180px;border-radius:5px">
+                                    <i class='fas fa-user-plus' style='font-size:20px'></i> CREAT NEW TEAM</button>
+                            </i>
+                            <i class="find" style=" border-radius: 5px;border-color: grey; background :rgba(0,0,0,0.08); width : 320px">
+                                <form>
+                                    <i class='fas fa-search' style ="margin: 8px;"></i>
+                                    <input type="search" style="color:white; height: 36px;border-style: none; background :rgba(0,0,0,0.0);width : 280px" >
+                                </form>
+                                
+                            </i>
+                        </ul>
+                    </div>
+                    <div class="rows2-2">
+                        <div class="govement">
+                            <ul class="training1">
+                                <i style="font-style: normal;font-weight:bold">Govement Initiative</i>
+                                <a class="icon2">
+                                    <i class='fas fa-edit' style="font-size:20px;color:rgb(95, 95, 99);font-weight:bold"></i>
+                                    <i class="fa fa-trash-o" style="font-size:20px;color:rgb(95, 95, 99);font-weight:bold"></i>
+                                    </a></br>
+                            </ul>
+                            <ul>
+                                <i class="training2" style="font-style: normal;color:rgb(95, 95, 99);font-weight:bold">12 USER</i></ul></br>
+                                <i class="img3">
+                                <img src="http://webcoban.vn/image/cat-2.jpg" style="border-radius: 40px;height: 50px;width: 50px;">    
+                                <img src="http://webcoban.vn/image/cat-2.jpg" style="border-radius: 40px;height: 50px;width: 50px;">
+                                <img src="http://webcoban.vn/image/cat-2.jpg" style="border-radius: 40px;height: 50px;width: 50px;">
+                                <img src="http://webcoban.vn/image/cat-2.jpg" style="border-radius: 40px;height: 50px;width: 50px;">
+                                <img src="http://webcoban.vn/image/cat-2.jpg" style="border-radius: 40px;height: 50px;width: 50px;">
+                                <img src="http://webcoban.vn/image/cat-2.jpg" style="border-radius: 40px;height: 50px;width: 50px;">
+                                <i class="number" style="font-style: normal;font-weight:bold;font-size: large;" > +3</i>
+                                </i>
+                            </ul>
+                            <ul class="training3">
+                                <i style="font-style: normal;color:rgb(95, 95, 99);font-weight:bold">4 MANAGER</i></br></ul>
+                                <i class="img4">
+                                    <img src="http://webcoban.vn/image/cat-2.jpg" style="border-radius: 40px;height: 50px;width: 50px;">
+                                    <img src="http://webcoban.vn/image/cat-2.jpg" style="border-radius: 40px;height: 50px;width: 50px;">
+                                    <img src="http://webcoban.vn/image/cat-2.jpg" style="border-radius: 40px;height: 50px;width: 50px;">
+                                    <img src="http://webcoban.vn/image/cat-2.jpg" style="border-radius: 40px;height: 50px;width: 50px;">
+                                    
+                                    </i>
+                            </ul>
+                        </div>
+                        <div class="training">
+                            <ul class="training1">
+                                <i style="font-style: normal;font-weight:bold">Training Team</i>
+                                <a class="icon2">
+                                    <i class='fas fa-edit' style="font-size:20px;color:rgb(95, 95, 99);font-weight:bold"></i>
+                                    <i class="fa fa-trash-o" style="font-size:20px;color:rgb(95, 95, 99);font-weight:bold"></i>
+                                    </a></br>
+                            </ul>
+                            <ul>
+                                <i class="training2" style="font-style: normal;color:rgb(95, 95, 99);font-weight:bold">35 USER</i></ul></br>
+                                <i class="img3">
+                                <img src="http://webcoban.vn/image/cat-2.jpg" style="border-radius: 40px;height: 50px;width: 50px;">    
+                                <img src="http://webcoban.vn/image/cat-2.jpg" style="border-radius: 40px;height: 50px;width: 50px;">
+                                <img src="http://webcoban.vn/image/cat-2.jpg" style="border-radius: 40px;height: 50px;width: 50px;">
+                                <img src="http://webcoban.vn/image/cat-2.jpg" style="border-radius: 40px;height: 50px;width: 50px;">
+                                <img src="http://webcoban.vn/image/cat-2.jpg" style="border-radius: 40px;height: 50px;width: 50px;">
+                                <img src="http://webcoban.vn/image/cat-2.jpg" style="border-radius: 40px;height: 50px;width: 50px;">
+                                <i class="number" style="font-style: normal;font-weight:bold;font-size: large;" > +26</i>
+                            </i>
+                                </i>
+                            </ul>
+                            <ul class="training3">
+                                <i style="font-style: normal;color:rgb(95, 95, 99);font-weight:bold">2 MANAGER</i></br></ul>
+                                <i class="img4">
+                                    <img src="http://webcoban.vn/image/cat-2.jpg" style="border-radius: 40px;height: 50px;width: 50px;">
+                                    <img src="http://webcoban.vn/image/cat-2.jpg" style="border-radius: 40px;height: 50px;width: 50px;">
+                                    
+                                    </i>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
