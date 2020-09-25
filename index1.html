@@ -32,10 +32,10 @@
 .cols1{
     grid-column-start: 1;
     background: rgba(197, 194, 194, 0.842); 
-    height:1000px;
+    height:2000px;
     margin:0; 
-    height: 1080px;
-  width: 60px;
+   
+    width: 60px;
 }
 .icon{ 
     display: grid;
@@ -52,7 +52,7 @@
 }
 .cols2{
     display: grid;
-    grid-template-rows: 1fr 7fr;
+    grid-template-rows: 1fr 15fr;
     grid-column-start: 2;
     background: white;
 }
@@ -61,10 +61,10 @@
     background:white;
     border-bottom: rgba(197, 194, 194, 0.842);
     border-width: 1px;
-   border-style: solid;
-   border-radius: 5px; 
-   height: 115px;
-  width: 1220px;
+    border-style: solid;
+    border-radius: 5px; 
+    height: 115px;
+    width: 1220px;
 }
 .top-nav{
     margin: 1rem;
@@ -105,7 +105,8 @@
     box-sizing: border-box;
     width: 400px;
     height: 300px;
-    border-radius: 5px;      
+    border-radius: 5px; 
+    padding-right: 10px;     
 }
 .govement1{
     margin-right:10px;
@@ -138,21 +139,21 @@ margin-left: 37px;
     float:right;
     
 }
-.training{
+
+.new{
     display:grid;
     grid-template-rows:1fr 1fr 2fr 1fr 2fr ;
     border-width: 1px;
    border-style: solid;
    border-color: rgb(201, 200, 200);
-    background: white;
+    background:aqua ;
     box-sizing: border-box;
     width: 400px;
     height: 300px;
     border-radius: 5px;  
 }
-.training1{
-    margin-right:10px;   
-}
+ 
+
 .img3{ display:flex;
 flex-wrap:nowrap;
 grid-row-start: 3;
@@ -168,16 +169,32 @@ margin-left: 37px;}
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 40px;height: 50px;width: 50px;
-    background:#DEDEDE;
+    border-radius: 40px;height: 45px;width: 45px;
+    background:pink;
     text-align: center;
 
     padding: 2px;   
     color: grey;}
+.number2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;height: 45px;width: 45px;
+   
+    text-align: center;
+
+    padding: 2px;   
+    color: grey;
+    background:powderblue;
+}
 .button{
     height: 36px;
     width: 180px;
 }
+.img4{
+    display: flex;
+}
+
 </style>
 <body>
     <div class="main">
@@ -202,7 +219,7 @@ margin-left: 37px;}
                             <ul>
                                 <i class='fas fa-user-alt' style="font-size:20px;color: rgba(0,0,0,0.38);;"></i>
                                 <i style="font-style: normal;color: rgba(0,0,0,0.38);">User</i>
-                                <i style="font-style: normal; border:solid;border-radius: 5px;border-width: 2px;color: rgba(0,0,0,0.38);">678</i>
+                                <i style="font-style: normal; border:solid;border-radius: 5px;border-width: 2px;color: rgba(0,0,0,0.38);" id="allNumber1">678</i>
                             </ul>
             
                         </div>
@@ -239,8 +256,8 @@ margin-left: 37px;}
                             </i>
                         </ul>
                     </div>
-                    <div class="rows2-2">
-                        <div class="govement">
+                    <div class="rows2-2"  id="1234">
+                        <!-- <div class="govement" >
                             <ul class="training1">
                                 <i style="font-style: normal;font-weight:bold">Govement Initiative</i>
                                 <a class="icon2">
@@ -249,7 +266,7 @@ margin-left: 37px;}
                                     </a></br>
                             </ul>
                             <ul>
-                                <i class="training2" style="font-style: normal;color:rgb(95, 95, 99);font-weight:bold">12 USER</i></ul></br>
+                                <i class="training2" style="font-style: normal;color:rgb(95, 95, 99);font-weight:bold"  >12 USER</i></ul></br>
                                 <i class="img3">
                                 <img src="http://webcoban.vn/image/cat-2.jpg" style="border-radius: 40px;height: 50px;width: 50px;">    
                                 <img src="http://webcoban.vn/image/cat-2.jpg" style="border-radius: 40px;height: 50px;width: 50px;">
@@ -257,11 +274,11 @@ margin-left: 37px;}
                                 <img src="http://webcoban.vn/image/cat-2.jpg" style="border-radius: 40px;height: 50px;width: 50px;">
                                 <img src="http://webcoban.vn/image/cat-2.jpg" style="border-radius: 40px;height: 50px;width: 50px;">
                                 <img src="http://webcoban.vn/image/cat-2.jpg" style="border-radius: 40px;height: 50px;width: 50px;">
-                                <i class="number" style="font-style: normal;font-weight:bold;font-size: large;" > +3</i>
+                                <i class="number" style="font-style: normal;font-weight:bold;font-size: large;"  id="number1"> +3</i>
                                 </i>
                             </ul>
                             <ul class="training3">
-                                <i style="font-style: normal;color:rgb(95, 95, 99);font-weight:bold">4 MANAGER</i></br></ul>
+                                <i style="font-style: normal;color:rgb(95, 95, 99);font-weight:bold" class="training4" >4 MANAGER</i></br></ul>
                                 <i class="img4">
                                     <img src="http://webcoban.vn/image/cat-2.jpg" style="border-radius: 40px;height: 50px;width: 50px;">
                                     <img src="http://webcoban.vn/image/cat-2.jpg" style="border-radius: 40px;height: 50px;width: 50px;">
@@ -271,7 +288,7 @@ margin-left: 37px;}
                                     </i>
                             </ul>
                         </div>
-                        <div class="training">
+                        <div class="training" >
                             <ul class="training1">
                                 <i style="font-style: normal;font-weight:bold">Training Team</i>
                                 <a class="icon2">
@@ -280,7 +297,7 @@ margin-left: 37px;}
                                     </a></br>
                             </ul>
                             <ul>
-                                <i class="training2" style="font-style: normal;color:rgb(95, 95, 99);font-weight:bold">35 USER</i></ul></br>
+                                <i class="training2" style="font-style: normal;color:rgb(95, 95, 99);font-weight:bold" >35 USER</i></ul></br>
                                 <i class="img3">
                                 <img src="http://webcoban.vn/image/cat-2.jpg" style="border-radius: 40px;height: 50px;width: 50px;">    
                                 <img src="http://webcoban.vn/image/cat-2.jpg" style="border-radius: 40px;height: 50px;width: 50px;">
@@ -288,12 +305,12 @@ margin-left: 37px;}
                                 <img src="http://webcoban.vn/image/cat-2.jpg" style="border-radius: 40px;height: 50px;width: 50px;">
                                 <img src="http://webcoban.vn/image/cat-2.jpg" style="border-radius: 40px;height: 50px;width: 50px;">
                                 <img src="http://webcoban.vn/image/cat-2.jpg" style="border-radius: 40px;height: 50px;width: 50px;">
-                                <i class="number" style="font-style: normal;font-weight:bold;font-size: large;" > +26</i>
+                                <i class="number" style="font-style: normal;font-weight:bold;font-size: large;" id="number2"> +26</i>
                             </i>
                                 </i>
                             </ul>
                             <ul class="training3">
-                                <i style="font-style: normal;color:rgb(95, 95, 99);font-weight:bold">2 MANAGER</i></br></ul>
+                                <i  style="font-style: normal;color:rgb(95, 95, 99);font-weight:bold"   class="training4">2 MANAGER</i></br></ul>
                                 <i class="img4">
                                     <img src="http://webcoban.vn/image/cat-2.jpg" style="border-radius: 40px;height: 50px;width: 50px;">
                                     <img src="http://webcoban.vn/image/cat-2.jpg" style="border-radius: 40px;height: 50px;width: 50px;">
@@ -301,11 +318,130 @@ margin-left: 37px;}
                                     </i>
                             </ul>
                         </div>
-                    </div>
+                         -->
                 </div>
                 
             </div>
+        </div>   
+            </div>
         </div>
     </div>
+  
+<script>
+function myFunction(i){
+    console.log(i);
+     let node = document.getElementById("1234"); 
+    // var textnode = document.createTextNode("a");
+    const newDiv1 = document.createElement('div');
+    var tree = '<div class="govement" ><ul ><i class="training1" style="font-style: normal;font-weight:bold">Govement Initiative</i><a class="icon2"><i class="fas fa-edit" style="font-size:20px;color:rgb(95, 95, 99);font-weight:bold"></i><i class="fa fa-trash-o" style="font-size:20px;color:rgb(95, 95, 99);font-weight:bold"></i></a></br></ul><ul><i class="training2" style="font-style: normal;color:rgb(95, 95, 99);font-weight:bold"  >12 USER</i></ul></br><i class="img3"><i></i></i></ul><ul class="training3"><i style="font-style: normal;color:rgb(95, 95, 99);font-weight:bold" class="training4" >4 MANAGER</i></br></ul><i class="img4"></i></ul></div>';
+    newDiv1.innerHTML = tree;
+    node.appendChild(newDiv1);
+    // node.appendChild(div);   
+     
+    
+ }
+
+    fetch('.//TeamJson.json')// fetch dữ liệu
+    .then(response => response.json())
+    .then(data => {
+        console.log(data);
+        for(let i=0;i<data.length;i++){
+            let node = document.getElementById("1234"); 
+            // var textnode = document.createTextNode("a");
+            const newDiv1 = document.createElement('div');
+            var tree = '<div class="govement" ><ul ><i class="training1" style="font-style: normal;font-weight:bold">Govement Initiative</i><a class="icon2"><i class="fas fa-edit" style="font-size:20px;color:rgb(95, 95, 99);font-weight:bold"></i><i class="fa fa-trash-o" style="font-size:20px;color:rgb(95, 95, 99);font-weight:bold"></i></a></br></ul><ul><i class="training2" style="font-style: normal;color:rgb(95, 95, 99);font-weight:bold"  >12 USER</i></ul></br><i class="img3"><i></i></i></ul><ul class="training3"><i style="font-style: normal;color:rgb(95, 95, 99);font-weight:bold" class="training4" >4 MANAGER</i></br></ul><i class="img4"></i></ul></div>';
+            newDiv1.innerHTML = tree;
+            node.appendChild(newDiv1);
+            
+            training1 = document.getElementsByClassName("training1");// gán team
+            training1[i].innerHTML= data[i].name + " Team";
+            training2 = document.getElementsByClassName("training2");//gán user
+            training2[i].innerHTML= data[i].memberIds.length + " User";
+            training4= document.getElementsByClassName("training4");//gán manager
+            training4[i].innerHTML= data[i].managerIds.length + " Manager";
+            var managerArray = data[i].managerIds;
+            
+           function appendItem(member){ // append hình tròn hàng 1
+               function getShortName(member){//lấy ra tên viết tắt của hàng 1
+                   if(!member){
+                       return 'JK';
+                   }                   
+                    return (member.firstName[0]+ member.lastName[0]);
+                   }
+        
+                // hàng tên thứ 1,class : img3
+                img3 = document.getElementsByClassName("img3");
+                const item = document.createElement('div');
+                var newItem=' <i class="number" style="font-style: normal;font-weight:bold;font-size: large;" id="number2">'+ getShortName(member) +'</i>';
+                item.innerHTML= newItem;
+                img3[i].appendChild(item);
+           
+              } if(data[i].memberIds.length<=6){ 
+                    for(let j=0;j<data[i].memberIds.length;j++ ){
+                     appendItem(data[i].memberIds[j]);
+                }}else{
+                    for(let j=0;j<6;j++ ){
+                     appendItem(data[i].memberIds[j]);
+                     }
+                     var numberBonus = data[i].memberIds.length -6;
+                     var bonusMember=' <i class="number2" style="font-style: normal;font-weight:bold;font-size: large;" id="number2">'+'+'+numberBonus +'</i>';
+                     const item = document.createElement('div');
+                     item.innerHTML= bonusMember;
+                     img3[i].appendChild(item);
+              }
+
+
+            function appendItem2(manager){// append hình tròn hàng 2
+                function getShortName2(manager){ //lấy ra tên viết tắt của hàng 2
+                   if(!manager){
+                       return 'JK';
+                   }                   
+                    return (manager.firstName[0]+manager.lastName[0]);
+                  }
+                // hàng tên thứ 2,class : img4
+                img4 = document.getElementsByClassName("img4");
+                const item2 = document.createElement('div');
+                var newItem2=' <i class="number" style="font-style: normal;font-weight:bold;font-size: large;" id="number2">'+ getShortName2(manager) +'</i>';
+                item2.innerHTML= newItem2;
+                img4[i].appendChild(item2);
+            }
+            
+            if(data[i].managerIds.length<=6){
+                for(let k=0;k<data[i].managerIds.length;k++){
+                    appendItem2(data[i].managerIds[k]);
+                }}else{
+                    for(let k=0;k<6;k++){
+                        appendItem2(data[i].managerIds[k]);
+                    }
+                    var numberBonus2 = data[i].managerIds.length-6;
+                    var bonusMember2= ' <i class="number2" style="font-style: normal;font-weight:bold;font-size: large;" id="number2">'+'+'+numberBonus2 +'</i>';
+                    const item2 =document.createElement('div');
+                    item2.innerHTML = bonusMember2;
+                    img4[i].appendChild(item2);
+                }
+            
+            // const array = [];
+            // for(let k=0;k<data[i].managerIds.length;k++ ){
+            //     if(k > 5){
+            //         break; // thoat vong for
+            //     }
+            //     appendItem2(data[i].managerIds[k]);
+            //     array.push(data[i].managerIds[k]);
+            // }
+            // if (data[i].managerIds.length === 38) {
+            //     console.log('img4img4', img4);
+            //     console.log('arrayarray', array);
+            // }
+            // else{
+            //     appendItem2(data[i].managerIds[k]);
+            // }
+            // }
+           
+         
+     
+    }});  
+  
+</script>
 </body>
 </html>
+
